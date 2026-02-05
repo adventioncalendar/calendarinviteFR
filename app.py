@@ -26,8 +26,8 @@ def invite():
     start_date = yyyymmdd_utc(now)
     end_date = yyyymmdd_utc(now + timedelta(days=1))
 
-    title = "Pick up your HIVST"
-    event_description = "Please go to your local medical centre"
+    title = "(FR)Pick up your HIVST"
+    event_description = "(FR)Please go to your local medical centre"
 
     # Alert 1: day before (either midnight or 9am the day before)
     alarm = request.args.get("alarm", "1day").lower()
@@ -89,6 +89,7 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+
 
 
 
