@@ -26,8 +26,8 @@ def invite():
     start_date = yyyymmdd_utc(now)
     end_date = yyyymmdd_utc(now + timedelta(days=1))
 
-    title = "Récupérez votre test de dépistage du VIH"
-    event_description = "Veuillez vous rendre à votre centre médical local pour récupérer six autotests de dépistage du VIH."
+    title = "Faites votre autotest du VIH"
+    event_description = "Il est temps de faire votre autotest de dépistage du VIH"
 
     # Alert 1: day before (either midnight or 9am the day before)
     alarm = request.args.get("alarm", "1day").lower()
@@ -55,7 +55,7 @@ def invite():
         f"DTSTAMP:{dtstamp_utc(now)}",
         f"DTSTART;VALUE=DATE:{start_date}",
         f"DTEND;VALUE=DATE:{end_date}",
-        "RRULE:FREQ=MONTHLY;INTERVAL=6",
+        "RRULE:FREQ=MONTHLY;INTERVAL=1",
         f"SUMMARY:{ics_escape(title)}",
         f"DESCRIPTION:{ics_escape(event_description)}",
 
@@ -89,6 +89,7 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+
 
 
 
