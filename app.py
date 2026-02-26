@@ -34,12 +34,12 @@ def invite():
 
     # 6 different events (each repeats every 6 months; together = monthly forever)
     events_data = [
-        ("Do your HIV Self-Test", "Please complete your HIV self-test this month."),
-        ("Check your HIV Status", "Take time to check your HIV status."),
-        ("Monthly Health Reminder", "Visit your local medical centre if needed."),
-        ("Stay Protected", "Ensure you know your HIV status."),
-        ("Health Check Reminder", "Prioritize your health this month."),
-        ("Self-Test Follow-Up", "Follow up on your HIV self-testing plan."),
+        ("Protégez votre partenaire et faites un auto-test VIH","Connaître votre statut VIH vous aide à vous protéger et à protéger votre partenaire. Si vous avez changé de partenaire ou avez un doute, faites un auto-test VIH dès aujourd’hui."),
+        ("Confirmez tout résultat réactif après une exposition possible en faisant un auto-test VIH","Après un rapport non protégé, une rupture de préservatif ou un partage de matériel d’injection, utilisez un auto-test VIH rapidement et confirmez tout résultat positif dans un centre de santé."),
+        ("Préparez votre renouvellement trimestriel de PrEP avec un auto-test VIH","Avant de renouveler votre PrEP, faites un auto-test VIH. Tester tous les 3 mois vous aide à rester protégé et en bonne santé."),
+        ("Renforcez votre confiance pour maintenir ou reprendre la PrEP/PEP avec un auto-test VIH","Si vous avez interrompu la PrEP ou avez besoin d’une PEP, commencez par un auto-test VIH. Connaître votre statut vous permet d’agir rapidement et en toute sécurité."),
+        ("Prenez le contrôle grâce à une détection précoce avec un auto-test VIH","Un dépistage précoce signifie de meilleurs résultats de santé. Utilisez un auto-test VIH régulièrement, surtout si vous avez un risque continu."),
+        ("Utilisez l’auto-test VIH comme partie intégrante de vos soins personnalisés après une pause de PrEP","Si vous avez fait une pause dans la PrEP et envisagez de la reprendre, faites un auto-test VIH pour confirmer votre statut avant de redémarrer."), 
     ]
 
     # Alerts:
@@ -103,5 +103,6 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+
 
 
