@@ -34,13 +34,13 @@ def invite():
 
     # 6 different events (each repeats every 6 months; together = monthly forever)
     events_data = [
-        ("Protégez votre partenaire et faites un auto-test VIH","Connaître votre statut VIH vous aide à vous protéger et à protéger votre partenaire. Si vous avez changé de partenaire ou avez un doute, faites un auto-test VIH dès aujourd’hui."),
-        ("Confirmez tout résultat réactif après une exposition possible en faisant un auto-test VIH","Après un rapport non protégé, une rupture de préservatif ou un partage de matériel d’injection, utilisez un auto-test VIH rapidement et confirmez tout résultat positif dans un centre de santé."),
-        ("Préparez votre renouvellement trimestriel de PrEP avec un auto-test VIH","Avant de renouveler votre PrEP, faites un auto-test VIH. Tester tous les 3 mois vous aide à rester protégé et en bonne santé."),
-        ("Renforcez votre confiance pour maintenir ou reprendre la PrEP/PEP avec un auto-test VIH","Si vous avez interrompu la PrEP ou avez besoin d’une PEP, commencez par un auto-test VIH. Connaître votre statut vous permet d’agir rapidement et en toute sécurité."),
-        ("Prenez le contrôle grâce à une détection précoce avec un auto-test VIH","Un dépistage précoce signifie de meilleurs résultats de santé. Utilisez un auto-test VIH régulièrement, surtout si vous avez un risque continu."),
-        ("Utilisez l’auto-test VIH comme partie intégrante de vos soins personnalisés après une pause de PrEP","Si vous avez fait une pause dans la PrEP et envisagez de la reprendre, faites un auto-test VIH pour confirmer votre statut avant de redémarrer."), 
-    ]
+     ("ปกป้องตัวคุณและคู่ของคุณด้วยการตรวจเอชไอวีด้วยตนเอง","กำลังเริ่มคบคนใหม่หรือไม่แน่ใจสถานะเอชไอวีของคู่ของคุณ? การตรวจด้วยตนเองช่วยให้คุณมั่นใจและปกป้องสิ่งที่สำคัญ การตรวจเป็นประจำช่วยให้คุณควบคุมสุขภาพของตนเองและสนับสนุนการป้องกัน"),
+("ยืนยันสถานะเอชไอวีของคุณหลังจากมีความเสี่ยง: ใช้ชุดตรวจเอชไอวีด้วยตนเองทันที","มีเพศสัมพันธ์โดยไม่ป้องกันหรือถุงยางแตกหรือไม่? ให้ตรวจเอชไอวีด้วยตนเองโดยเร็วที่สุด หากเหตุการณ์เกิดขึ้นภายใน 72 ชั่วโมง ให้รีบรับ PEP ทันที การดำเนินการอย่างรวดเร็วช่วยให้คุณปลอดภัยและได้รับข้อมูลที่ถูกต้อง"),
+("เตรียมตัวสำหรับการรับ PrEP ครั้งถัดไปทุก 3 เดือนด้วยการตรวจเอชไอวีด้วยตนเอง","กำลังใช้ PrEP หรือไม่? หากคุณใช้ PrEP แบบรับประทานทุกวัน ควรตรวจเอชไอวีอย่างน้อยทุก 3 เดือน การตรวจอย่างสม่ำเสมอช่วยให้การใช้ PrEP ปลอดภัย มีประสิทธิภาพ และเป็นไปตามแผน"),
+("เพิ่มความมั่นใจระหว่างการใช้หรือก่อนเริ่มใช้ PrEP อีกครั้งด้วยการตรวจเอชไอวีด้วยตนเอง","หยุดใช้ PrEP หรือกำลังคิดจะเริ่มใหม่หรือไม่? ก่อนเริ่มอีกครั้ง ควรยืนยันว่าคุณยังมีสถานะลบด้วยการตรวจด้วยตนเอง การตรวจเป็นประจำช่วยปกป้องคุณและทำให้แผนการป้องกันของคุณมีประสิทธิภาพ"),
+("ควบคุมสุขภาพของคุณด้วยการตรวจเอชไอวีด้วยตนเองตั้งแต่เนิ่น ๆ","การรู้สึกสุขภาพดีไม่ได้หมายความว่าไม่มีเอชไอวี หลายคนไม่มีอาการในระยะแรก การตรวจด้วยตนเองช่วยให้คุณมีความชัดเจน ความมั่นใจ และควบคุมสถานะของตนเองได้"),
+("ทำให้การตรวจเอชไอวีด้วยตนเองเป็นส่วนหนึ่งของการดูแลสุขภาพเฉพาะบุคคลหลังจากหยุดใช้ PrEP","จำไม่ได้ว่าครั้งสุดท้ายที่ตรวจเมื่อไหร่หรือไม่? ตอนนี้เป็นเวลาที่ดีในการตรวจด้วยตนเอง การตรวจอย่างสม่ำเสมอช่วยให้ตรวจพบได้เร็วและช่วยให้คุณมั่นใจในเส้นทางการป้องกันของคุณ")
+]
 
     # Alerts:
     # - Day before: midnight the day before (relative to all-day start at 00:00)
